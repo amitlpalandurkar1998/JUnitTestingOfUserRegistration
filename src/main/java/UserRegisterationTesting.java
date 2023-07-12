@@ -32,7 +32,7 @@ public class UserRegisterationTesting {
         return validOrInvalid;
     }
     public static String getUserEmailID(String emailID){
-        Pattern pattern = Pattern.compile("[a-z0-9]{3,}.[a-z0-9]{3,}@{1}(abc|bl|co){1}.co.in");
+        Pattern pattern = Pattern.compile("^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$");
         String validOrInvalid;
 
         Matcher matcher = pattern.matcher(emailID);
